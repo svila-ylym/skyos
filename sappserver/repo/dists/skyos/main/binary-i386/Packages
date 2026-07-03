@@ -1,0 +1,142 @@
+Package: base-tools
+Version: 1.0.1.0.SKYCNQU
+InternalVersion: 10002
+Architecture: i386
+System: skyos-10002
+CompatibleInternalVersion: 10002
+Filename: pool/main/base-tools_1.0.1.0.SKYCNQU_skyos-i386.spk
+Size: 318
+SHA256: 50b1db74bb3405de4302698de38b377dd8127d5ab1750f2ebdfbf002927841d7
+Format: spk-binary-v1
+Description: Base SkyOS shell tools
+
+Package: calc
+Version: 1.0.1.0.SKYCNQU
+InternalVersion: 10002
+Architecture: i386
+System: skyos-10002
+CompatibleInternalVersion: 10002
+SXR-Depends: skycrt (>= 10002)
+Filename: pool/main/calc_1.0.1.0.SKYCNQU_skyos-i386.spk
+Size: 1053
+SHA256: 41d806c05dea44d461f3c216e3b362f734d09755ca4ad954004c3c4d6d093037
+Format: spk-binary-v2
+Runtime: native-i386
+EntryPoint: /usr/bin/calc
+Commands: calc
+PackageType: cli-app
+Permissions: {"read": ["/home"], "write": ["/home/user"]}
+TuringComplete: yes
+Description: Calc for SkyOS
+
+Package: editor-vi
+Version: 1.0.1.0.SKYCNQU
+InternalVersion: 10002
+Architecture: i386
+System: skyos-10002
+CompatibleInternalVersion: 10002
+Depends: base-tools (>= 10002)
+Filename: pool/main/editor-vi_1.0.1.0.SKYCNQU_skyos-i386.spk
+Size: 339
+SHA256: bb5819f118de8beda100c7109635c07b0749edc3dc4054eebe2955c411acb338
+Format: spk-binary-v1
+Description: SkyOS vi editor package
+
+Package: hello
+Version: 1.0.1.0.SKYCNQU
+InternalVersion: 10002
+Architecture: i386
+System: skyos-10002
+CompatibleInternalVersion: 10002
+Depends: base-tools (>= 10002)
+Filename: pool/main/hello_1.0.1.0.SKYCNQU_skyos-i386.spk
+Size: 585
+SHA256: 5ac030dd67fea71440b28762d9ebc8661fea8899b20b0c7aa8e2a9a85d8f3a42
+Format: spk-binary-v1
+Description: Hello package for SkyOS
+
+Package: net-tools
+Version: 1.0.1.0.SKYCNQU
+InternalVersion: 10002
+Architecture: i386
+System: skyos-10002
+CompatibleInternalVersion: 10002
+Depends: base-tools (>= 10002)
+Filename: pool/main/net-tools_1.0.1.0.SKYCNQU_skyos-i386.spk
+Size: 342
+SHA256: a0beefe653a5335ed51a87af015f637e42a500e67658c917d3638b5980ddf9b5
+Format: spk-binary-v1
+Description: Network commands for SkyOS
+
+Package: sapp-utils
+Version: 1.0.1.0.SKYCNQU
+InternalVersion: 10002
+Architecture: i386
+System: skyos-10002
+CompatibleInternalVersion: 10002
+Depends: base-tools (>= 10002), net-tools (>= 10002)
+Filename: pool/main/sapp-utils_1.0.1.0.SKYCNQU_skyos-i386.spk
+Size: 369
+SHA256: 395ed5c1dfaef37ca816d8ffc5bb6409653af5239ba2533355ae6aae37d11502
+Format: spk-binary-v1
+Description: Sapp package manager utilities
+
+Package: skycalc
+Version: 1.0.1.0.SKYCNQU
+InternalVersion: 10002
+Architecture: i386
+System: skyos-10002
+CompatibleInternalVersion: 10002
+Depends: base-tools (>= 10002)
+Filename: pool/main/skycalc_1.0.1.0.SKYCNQU_skyos-i386.spk
+Size: 3583
+SHA256: d8e381f4504a44a78285118a0f1061badbdbec2dfab77229d8df3232c4744451
+Format: spk-binary-v1
+Description: Minimal Python interactive calculator for SkyOS
+
+Package: skycrt
+Version: 1.0.1.0.SKYCNQU
+InternalVersion: 10002
+Architecture: i386
+System: skyos-10002
+CompatibleInternalVersion: 10002
+Filename: pool/main/skycrt_1.0.1.0.SKYCNQU_skyos-i386.sxr
+Size: 605
+SHA256: a8d7135028703b365b223f2a125b9fdc71ef71e991dc9ed6c4c5c5fb2a58c7b7
+Format: sxr-binary-v1
+Runtime: sxr
+PackageType: sxr-library
+Description: SkyOS native runtime SXR
+
+Package: skygui-demo
+Version: 1.0.1.0.SKYCNQU
+InternalVersion: 10002
+Architecture: i386
+System: skyos-10002
+CompatibleInternalVersion: 10002
+SXR-Depends: skyui (>= 10002), skycrt (>= 10002)
+Filename: pool/main/skygui-demo_1.0.1.0.SKYCNQU_skyos-i386.spk
+Size: 1233
+SHA256: 3363f167e7dd717596311ba0982989780060e43c909fd0a98b7f9be6cd662d82
+Format: spk-binary-v2
+Runtime: soj
+EntryPoint: /opt/skygui-demo/install.soj
+Commands: skygui-demo
+PackageType: installer
+Permissions: {"read": ["/home", "/usr/share"], "write": ["/home/user", "/tmp"]}
+TuringComplete: yes
+Description: SkyOS GUI installer demo package
+
+Package: skyui
+Version: 1.0.1.0.SKYCNQU
+InternalVersion: 10002
+Architecture: i386
+System: skyos-10002
+CompatibleInternalVersion: 10002
+Filename: pool/main/skyui_1.0.1.0.SKYCNQU_skyos-i386.sxr
+Size: 598
+SHA256: da323680c9533e71d9648fb6a7e96159e4902ae8c3d3d31dd4a311ef026a904b
+Format: sxr-binary-v1
+Runtime: sxr
+PackageType: sxr-library
+Description: SkyOS GUI runtime SXR
