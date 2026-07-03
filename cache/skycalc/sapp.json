@@ -1,0 +1,9 @@
+{
+  "Package": "skycalc",
+  "Version": "1.0.3.0.GSOSYGP",
+  "InternalVersion": "10015",
+  "System": "skyos-10015",
+  "CompatibleInternalVersion": "10015",
+  "Depends": "base-tools (>= 10015)",
+  "Description": "Minimal Python interactive calculator for SkyOS"
+}

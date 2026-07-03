@@ -1,0 +1,25 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+
+# Build output
+dist/
+build/
+out/
+*.iso
+*.bin
+*.elf
+
+# Dependencies
+node_modules/
+
+# Local tool installers/cache
+tools/

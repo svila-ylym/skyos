@@ -1,0 +1,3 @@
+echo SkyGUI demo installer
+echo Installing GUI resources
+exec gui

@@ -1,0 +1,216 @@
+Package: base-tools
+Version: 1.0.3.0.GSOSYGP
+InternalVersion: 10015
+Architecture: i386
+System: skyos-10015
+CompatibleInternalVersion: 10015
+Filename: pool/main/base-tools_1.0.3.0.GSOSYGP_skyos-i386.spk
+Size: 1131
+SHA256: 64e4380d68a3778539538f31ca797d6b7624b9b83a4f4d049ae89a77b4948fa1
+Format: spk-binary-v2
+Runtime: soj
+RuntimeABI: skyos-i386
+Languages: soj
+PackageType: app
+Executable: no
+Standalone: no
+CanInstallGUI: no
+DependencyModel: SXR
+Permissions: {"read": [], "write": []}
+TuringComplete: yes
+Description: Base SkyOS shell tools
+
+Package: calc
+Version: 1.0.3.0.GSOSYGP
+InternalVersion: 10015
+Architecture: i386
+System: skyos-10015
+CompatibleInternalVersion: 10015
+SXR-Depends: skycrt (>= 10015)
+Filename: pool/main/calc_1.0.3.0.GSOSYGP_skyos-i386.spk
+Size: 1213
+SHA256: 42a2de9cde34b1d3f638205882c6171817f415319f47006aad7ef53aef09cdfc
+Format: spk-binary-v2
+Runtime: native-i386
+RuntimeABI: skyos-i386
+Languages: c, nasm
+EntryPoint: /usr/bin/calc
+Commands: calc
+PackageType: cli-app
+Executable: yes
+Standalone: yes
+CanInstallGUI: no
+DependencyModel: SXR
+Permissions: {"read": ["/home"], "write": ["/home/user"]}
+TuringComplete: yes
+Description: Calc for SkyOS
+
+Package: editor-vi
+Version: 1.0.3.0.GSOSYGP
+InternalVersion: 10015
+Architecture: i386
+System: skyos-10015
+CompatibleInternalVersion: 10015
+Depends: base-tools (>= 10015)
+Filename: pool/main/editor-vi_1.0.3.0.GSOSYGP_skyos-i386.spk
+Size: 1168
+SHA256: cc509ca84ee9c197f35bb41cb849da614d9fbf9cccfed44260bc70aa0cdf2e98
+Format: spk-binary-v2
+Runtime: soj
+RuntimeABI: skyos-i386
+Languages: soj
+PackageType: app
+Executable: no
+Standalone: no
+CanInstallGUI: no
+DependencyModel: SXR
+Permissions: {"read": [], "write": []}
+TuringComplete: yes
+Description: SkyOS vi editor package
+
+Package: hello
+Version: 1.0.3.0.GSOSYGP
+InternalVersion: 10015
+Architecture: i386
+System: skyos-10015
+CompatibleInternalVersion: 10015
+Filename: pool/main/hello_1.0.3.0.GSOSYGP_skyos-i386.spk
+Size: 1271
+SHA256: 588e194ed90950850a57a79e7c9d4710caa8f82db9388c14a2161e329d6821af
+Format: spk-binary-v2
+Runtime: soj
+RuntimeABI: skyos-i386
+Languages: soj
+PackageType: app
+Executable: no
+Standalone: no
+CanInstallGUI: no
+DependencyModel: SXR
+Permissions: {"read": [], "write": []}
+TuringComplete: yes
+Description: Hello package for SkyOS
+
+Package: net-tools
+Version: 1.0.3.0.GSOSYGP
+InternalVersion: 10015
+Architecture: i386
+System: skyos-10015
+CompatibleInternalVersion: 10015
+Depends: base-tools (>= 10015)
+Filename: pool/main/net-tools_1.0.3.0.GSOSYGP_skyos-i386.spk
+Size: 1170
+SHA256: 22dc768d50668323fe45a6ff92bdbd382fe6cf12e336a9b39d317f21f64d56be
+Format: spk-binary-v2
+Runtime: soj
+RuntimeABI: skyos-i386
+Languages: soj
+PackageType: app
+Executable: no
+Standalone: no
+CanInstallGUI: no
+DependencyModel: SXR
+Permissions: {"read": [], "write": []}
+TuringComplete: yes
+Description: Network commands for SkyOS
+
+Package: sapp-utils
+Version: 1.0.3.0.GSOSYGP
+InternalVersion: 10015
+Architecture: i386
+System: skyos-10015
+CompatibleInternalVersion: 10015
+Depends: base-tools (>= 10015), net-tools (>= 10015)
+Filename: pool/main/sapp-utils_1.0.3.0.GSOSYGP_skyos-i386.spk
+Size: 1206
+SHA256: 9644851b8d7a4f52b46bc224ce946244eb25933ad791f0e661cb3fc20791e202
+Format: spk-binary-v2
+Runtime: soj
+RuntimeABI: skyos-i386
+Languages: soj
+PackageType: app
+Executable: no
+Standalone: no
+CanInstallGUI: no
+DependencyModel: SXR
+Permissions: {"read": [], "write": []}
+TuringComplete: yes
+Description: Sapp package manager utilities
+
+Package: skycalc
+Version: 1.0.3.0.GSOSYGP
+InternalVersion: 10015
+Architecture: i386
+System: skyos-10015
+CompatibleInternalVersion: 10015
+Depends: base-tools (>= 10015)
+Filename: pool/main/skycalc_1.0.3.0.GSOSYGP_skyos-i386.spk
+Size: 4327
+SHA256: b1786aa7a7ce1dad9dae06e0a7266fad0e8e0c7cac90e77c18393d8e0da9426b
+Format: spk-binary-v2
+Runtime: python-bytecode
+RuntimeABI: skyos-i386
+Languages: python
+PackageType: app
+Executable: no
+Standalone: no
+CanInstallGUI: no
+DependencyModel: SXR
+Permissions: {"read": [], "write": []}
+TuringComplete: yes
+Description: Minimal Python interactive calculator for SkyOS
+
+Package: skycrt
+Version: 1.0.3.0.GSOSYGP
+InternalVersion: 10015
+Architecture: i386
+System: skyos-10015
+CompatibleInternalVersion: 10015
+Filename: pool/main/skycrt_1.0.3.0.GSOSYGP_skyos-i386.sxr
+Size: 603
+SHA256: 992dc35a7c4f04a2252357dd6e81a4da39fdb47a87a0eced3b65733792003e77
+Format: sxr-binary-v1
+Runtime: sxr
+RuntimeABI: skyos-i386
+PackageType: sxr-library
+Description: SkyOS native runtime SXR
+
+Package: skygui-demo
+Version: 1.0.3.0.GSOSYGP
+InternalVersion: 10015
+Architecture: i386
+System: skyos-10015
+CompatibleInternalVersion: 10015
+Depends: base-tools (>= 10015)
+SXR-Depends: skyui (>= 10015), skycrt (>= 10015)
+Filename: pool/main/skygui-demo_1.0.3.0.GSOSYGP_skyos-i386.spk
+Size: 1439
+SHA256: 87a676df2d9e1821642060a738b3a65c4062d16eef781d83b62f83d46b793fc1
+Format: spk-binary-v2
+Runtime: soj
+RuntimeABI: skyos-i386
+Languages: soj
+EntryPoint: /opt/skygui-demo/install.soj
+Commands: skygui-demo
+PackageType: installer
+Executable: yes
+Standalone: yes
+CanInstallGUI: yes
+DependencyModel: SXR
+Permissions: {"read": ["/home", "/usr/share"], "write": ["/home/user", "/tmp"]}
+TuringComplete: yes
+Description: SkyOS GUI installer demo package
+
+Package: skyui
+Version: 1.0.3.0.GSOSYGP
+InternalVersion: 10015
+Architecture: i386
+System: skyos-10015
+CompatibleInternalVersion: 10015
+Filename: pool/main/skyui_1.0.3.0.GSOSYGP_skyos-i386.sxr
+Size: 597
+SHA256: f9f4febacfee015becbbec4a02134971b5563d0fabaa1dbe2cb9ebc5c93214a6
+Format: sxr-binary-v1
+Runtime: sxr
+RuntimeABI: skyos-i386
+PackageType: sxr-library
+Description: SkyOS GUI runtime SXR

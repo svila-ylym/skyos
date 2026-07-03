@@ -1,0 +1,6 @@
+Origin: SkyOS
+Label: SkyApps
+Suite: skyos
+Codename: skyos
+Architectures: i386
+Components: main
